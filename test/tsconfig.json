@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@k6-load-test/core/*": ["../packages/core/src/*"]
+    },
+    "lib": ["esnext", "dom"],
+  },
+}

@@ -1,0 +1,16 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/k6": "~0.45.3",
+    "esbuild": "^0.19.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "test:compile": "esbuild src/customer.load.test.ts --bundle --outfile=dist/customer.load.test.js --platform=node --external:k6 --external:https*",
+    "test:run": "sst bind \"k6 run dist/customer.load.test.js\"",
+    "test": "npm run test:compile && npm run test:run",
+    "create_guest_user": "sst bind \"bash create_guest_user.sh \""
+  }
+}

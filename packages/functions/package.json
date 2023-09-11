@@ -1,0 +1,13 @@
+{
+  "name": "@k6-load-test/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "@types/aws-lambda": "^8.10.119",
+    "sst": "^2.23.3"
+  }
+}

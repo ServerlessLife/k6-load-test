@@ -1,0 +1,11 @@
+{
+  "name": "@k6-load-test/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "sst": "^2.23.3"
+  }
+}
